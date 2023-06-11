@@ -58,7 +58,7 @@ int main(void)
 
     vector<vector<int>> matrix = {{0,1,2,0}, {3,4,5,2}, {1,3,1,5}};
     
-    Solution solution = Solution();
+    Solution solution;
     solution.setZeroes(matrix);
 
     for (auto i:matrix) {
