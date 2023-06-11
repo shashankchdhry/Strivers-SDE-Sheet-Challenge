@@ -7,19 +7,6 @@
 #define nline "\n"
     
 using namespace std;
-    
-int main(void)
-{
-    ios::sync_with_stdio(false);
-    cin.tie(NULL);
-
-    vector<vector<int>> matrix = {{0,1,2,0}, {3,4,5,2}, {1,3,1,5}};
-    
-    Solution solution = Solution();
-    solution.setZeroes(matrix);
-    
-    return 0;
-}
 
 class Solution {
 public:
@@ -63,3 +50,24 @@ public:
                 matrix[i][0] = 0;
     }
 };
+    
+int main(void)
+{
+    ios::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    vector<vector<int>> matrix = {{0,1,2,0}, {3,4,5,2}, {1,3,1,5}};
+    
+    Solution solution = Solution();
+    solution.setZeroes(matrix);
+
+    for (auto i:matrix) {
+        for (auto j:i) {
+            cout << j << " ";
+        }
+        cout << nline;
+    }
+    
+    return 0;
+}
+
